@@ -1,0 +1,1 @@
+Small repo for small projects and exercises from FreeCodeCamp.
