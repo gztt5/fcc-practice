@@ -1,5 +1,16 @@
 body {
+  font-family: Helvetica;
   background-color: rgb(207, 207, 207);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+body:has(.blog-post-card:hover) {
+  background-color: rgb(190, 190, 190);
 }
 
 .blog-post-card {
@@ -11,6 +22,12 @@ body {
   text-align: center;
   overflow: hidden;
   margin: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-post-card:hover {
+  transform: scale(1.10);
+  box-shadow: 4px 4px 20px black;
 }
 
 .post-img {
@@ -54,4 +71,8 @@ body {
 
 .read-more:hover {
   background-color: rgb(90, 90, 90)
+}
+
+.read-more:active {
+  background-color: rgb(150, 150, 150);
 }
