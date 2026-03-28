@@ -23,6 +23,7 @@ body:has(.blog-post-card:hover) {
   overflow: hidden;
   margin: auto;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  user-select: none;
 }
 
 .blog-post-card:hover {
