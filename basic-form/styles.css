@@ -1,0 +1,106 @@
+body {
+  background-color: #0f172a;
+  font-size: 1.1rem;
+  font-family: Helvetica, Arial;
+}
+
+.container {
+  background-color: #1e293b;
+  color: #f8fafc;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px black;
+}
+
+h1 {
+  text-align: center;
+}
+
+label:not(fieldset label) {
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+input {
+  margin-top: 5px;
+}
+
+form {
+  background-color: transparent;
+}
+
+form #name, #email, #position {
+  display: block;
+}
+
+select, input:not([type="radio"]) {
+  box-sizing: border-box;
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+}
+
+fieldset {
+  margin-top: 20px;
+}
+
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  resize: none;
+}
+
+button {
+  background-color: #3b82f6;
+  color: #f8fafc;
+  font-size: 1.1rem;
+  width: 100%;
+  height: 40px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+/* PSEUDO CLASSES */
+
+button:hover {
+  background-color: #5898fe;
+}
+
+button:active {
+  background-color: #88b5ff;
+}
+
+input:invalid, select:invalid, textarea:invalid {
+  border: 1px solid red;
+}
+
+input:valid, select:valid, textarea:valid {
+  border: 1px solid green;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border: 1px solid gray;
+}
+
+.radio-group input[type="radio"]:checked {
+  border: lightgray;
+  box-shadow: 1px 1px 2px black;
+  background-color: gray
+}
+
+input[type="radio"]:checked + label {
+  color: #3b82f6;
+}
+
+input:first-of-type {
+  border-radius: 5px;
+}
+
+/* I don't like this project.
+I did some adjustments only to get through FreeCodeCamp's tests. */
